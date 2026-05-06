@@ -107,7 +107,7 @@ export const CONFIG = {
     ignoreSpaces: true,
   },
 
-  ending: {
+    ending: {
     image: "assets/images/card.png",
     title: "С днём рождения, Даша!",
     message:
@@ -116,6 +116,18 @@ export const CONFIG = {
       "и самых ярких моментов!",
     music: "assets/audio/ending.mp3",
     confetti: true,
+
+    // --- Падающие картинки поверх конфетти ---
+    // Сюда добавляй пути к PNG, которые должны падать (можно несколько — будут чередоваться случайно).
+    fallingImages: [
+      "assets/images/Durin_sitting.gif",
+      "assets/images/wanderer wandering.gif",
+      "assets/images/Albedo chibi.jpeg",
+      "assets/images/Scatamouche.jpg",
+    ],
+    fallingInterval: 3000,       // мс между появлениями новой картинки (3 сек по дефолту)
+    fallingSpeedDivisor: 3,      // во сколько раз медленнее конфетти
+    fallingSize: 96,             // размер картинки на экране (px)
   },
 
   audio: {
