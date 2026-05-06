@@ -124,6 +124,16 @@ export const CONFIG = {
       "assets/images/wanderer wandering.gif",
       "assets/images/Albedo chibi.jpeg",
       "assets/images/Scatamouche.jpg",
+      "assets/images/1.jpg",
+      "assets/images/2.jpg",
+      "assets/images/3.jpg",
+      "assets/images/4.jpg",
+      "assets/images/5.jpg",
+      "assets/images/6.jpg",
+      "assets/images/7.jpg",
+      "assets/images/8.jpg",
+      "assets/images/9.jpg",
+      "assets/images/10.jpg",
     ],
     fallingInterval: 3000,       // мс между появлениями новой картинки (3 сек по дефолту)
     fallingSpeedDivisor: 3,      // во сколько раз медленнее конфетти
