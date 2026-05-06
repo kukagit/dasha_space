@@ -34,7 +34,7 @@ export function showEnding(config, onRestart) {
     endingAudio.play().catch(() => {});
   }
 
-  if (config.ending.confetti && !confettiRunning) startConfetti();
+  if (config.ending.confetti && !confettiRunning) startConfetti(config);
 }
 
 function startConfetti() {
