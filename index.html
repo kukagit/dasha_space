@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dasha Space</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="root">
+    <section id="intro" class="screen active">
+      <div class="intro-inner">
+        <h1 id="intro-title">С днём рождения!</h1>
+        <p id="intro-sub">Поговори со всеми и собери код.</p>
+        <button id="start-btn">Начать</button>
+        <button id="reset-btn" class="ghost">Сбросить прогресс</button>
+      </div>
+    </section>
+
+    <section id="game" class="screen">
+      <canvas id="game-canvas" width="800" height="600"></canvas>
+      <div id="hint" class="hint hidden">E — поговорить</div>
+
+      <div id="dialog" class="dialog hidden">
+        <div class="dialog-name" id="dialog-name"></div>
+        <div class="dialog-text" id="dialog-text"></div>
+        <div class="dialog-prompt">▼ пробел / Enter</div>
+      </div>
+
+      <div id="password-modal" class="modal hidden">
+        <div class="modal-inner">
+          <h2>Введите код</h2>
+          <p id="password-hint"></p>
+          <input id="password-input" type="text" autocomplete="off" spellcheck="false" />
+          <div class="modal-buttons">
+            <button id="password-submit">Подтвердить</button>
+            <button id="password-cancel" class="ghost">Отмена</button>
+          </div>
+          <div id="password-error" class="error hidden">Неверный код</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ending" class="screen">
+      <canvas id="confetti-canvas"></canvas>
+      <div class="ending-inner">
+        <img id="ending-img" alt="Открытка" />
+        <h1 id="ending-title">С днём рождения!</h1>
+        <div id="ending-message"></div>
+        <button id="ending-restart" class="ghost">Начать заново</button>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
